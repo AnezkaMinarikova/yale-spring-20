@@ -15,3 +15,13 @@ img{
   position: relative;
 
 }
+
+a{
+  text-decoration: underline;
+  font-family: bold;
+  color: red;
+}
+
+h2{
+  font-size: 20px;
+}

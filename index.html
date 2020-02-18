@@ -12,39 +12,46 @@
 <body>
   <div>
 
-       <img src="objects.jpg" alt="blind-spot-mirror">
+       <img src="blind.png" alt="blind-spot-mirror">
 
 
 
 <h1>Objects in the mirror are closer than they appear</h1>
-<h2>proposal for browser extension</h2>
 
-Extension for internet browser that enables users to see the “invisible” content of the websites by printing it (ctrl+P).
+<i>Extension for internet browser that enables users to see the “invisible” content of the websites by printing it (ctrl+P).</i>
+<br><br>
 
-	1	What kind of content is on the website but we dont see it (hidden content)?
 
-		source code
+	<p>What kind of content is on the website but we dont see it (hidden content)?</p>
 
-			2	What does it contain and why it may be useful to see it/print it?
+<ol>
+		<li>source code</li></ol>
 
-				meta Content /<meta> tag: page description, keywords, author of the document, last modified, and viewport elements
+		<p>What does it contain and why it may be useful to see it/print it?</p><ol>
 
-				 comments and https://www.accuteach.com/5-crazy-hidden-messages-in-website-source-codes/
+			<li>	meta Content/ meta tag: page description, keywords, author of the document, last modified, and viewport elements</li>
 
-						hidden or manipulated content: content moved outside of the viewable area beyond the borders of the page, hidden links
+				 <li>comments and <a href="https://www.accuteach.com/5-crazy-hidden-messages-in-website-source-codes/"> ! </a></li>
 
-							<img> alt attribute: alternate text for an image, if the image cannot be displayed
+					<li>	hidden or manipulated content: content moved outside of the viewable area beyond the borders of the page, hidden links</li>
 
-								style (how many colors, fonts)
+						<li> img alt attribute: alternate text for an image, if the image cannot be displayed</li>
 
-									visibility:hidden, display:none
+								<li>style (how many colors, fonts)</li>
 
-										:hover selector is used to select elements when you mouse over them
+              <li>visibility:hidden, display:none</li>
 
-											mouse  enter and mouse:  leave  mouse moves between elements
+									<li>hover selector is used to select elements when you mouse over them</li>
 
-												3	How will the extension work and how it will be designed?
-</p>
+										<li>	mouse enter and mouse:  leave  mouse moves between elements</li></ol>
+
+											<p>How will the extension work and how it will be designed?</p>
+                      <ol><li>The extension will be written with a content script that runs in the context of the page and may modify that website - in this case print certain elements of source code.
+
+<li>Source code is in 99% of cases available for everyone to see, but it is commonly not understood by people without coding knowledge.</li> Source code is machine parsable.<li> This extension should be like a reader that displays the hiddent parts of the source code in a legible and engaging way.</li><ol>
+
+
+
 
 
 
