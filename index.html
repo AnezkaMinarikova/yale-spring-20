@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <meta name="msapplication-tap-highlight" content="no"/>
-    <link rel="stylesheet" href="assets/style.css">
-    <title>we have lot of time on our hands</title>
+  <style>
+  p{
+    font-size: 24px;
+    line-height: 0.2em;
+  }
+  body{
+    margin: 2em;
+  }
+  h2{
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .a1{
+    color:orange;
+    text-decoration: line-through;
+
+  }
+  .a2{
+    color:orange;
+    text-decoration: none;
+
+  }
+  .a3{
+    color:red;
+    text-decoration: none;
+
+  }
+  .a4{
+    color:dark violet;
+    text-decoration: none;
+
+  }
+  .a5{
+    color: blue;
+    text-decoration: none;
+
+  }
+  .a6{
+    color: green;
+    text-decoration: none;
+
+  }
+  </style>
+
 </head>
 <body>
-    <div class="container">
-        <div id="hit" class="bg1" style="padding: 10px; height: 800px;">
-        </div>
+
+<h2>Anežka Minaříková</h2>
+<p>p1 <a class="a1" href="void.html">void [grandmother's song]</a>
+<p>p1 <a class="a2" href="void2.html">void [blind spot]</a>
+<p>p2 <a class="a3" href="trail.html">trail [blind spot mirror browser extensions] </a>
+<p>p3 <a class="a4" href="https://showmewhatyougot.nfshost.com/">packet [show it to the website]</a>
+<p>p4 <a class="a5" href="https://toomuchtime.nfshost.com/">site [hand as a clock is in progress - please see the updated version on Sunday, 26th of April]</a>
+
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+<p> <a class="a6" href="https://whataboutthis.us/">kiosk</a> [together with Nick and Jun]
+  <br/>
+  <br/>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+
+ <img src="index.png" alt="See you soon!">
+ <br/>
+
+
+ <p> It was fun, thank you! ♥</p>
 
 
 
 
-
-        <div id="handtrackjs">
-          <video autoplay="autoplay" style="display: none;"></video>
-          <canvas></canvas>
-        </div>
-    </div>
-    <script src="../node_modules/hammerjs/hammer.js"></script>
-    <script src="../dist/index.js"></script>
-    <script>
-
-        var el = document.querySelector("#hit");
-        var log = document.querySelector("#log");
-        var debug = document.querySelector("#debug");
-
-        var mc = new Hammer(el);
-        mc.get('pinch').set({ enable: true });
-
-        mc.on("hammer.input", function(ev) {
-            debug.innerHTML = [ev.srcEvent.type, ev.pointers.length, ev.isFinal, ev.deltaX, ev.deltaY].join("<br>");
-        });
-
-
-        var video = document.getElementById("handtrackjs").getElementsByTagName("video")[0];
-        var canvas = document.getElementById("handtrackjs").getElementsByTagName("canvas")[0];
-
-        HandtrackTouch.start(el, video, canvas);
-
-    </script>
 </body>
 </html>
